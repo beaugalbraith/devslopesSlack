@@ -1,0 +1,352 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E90B03B41F0304F700B29231 /* NSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B03B31F0304F700B29231 /* NSButton.swift */; };
+		E90B03B61F03104A00B29231 /* FocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B03B51F03104A00B29231 /* FocusView.swift */; };
+		E99985871F02AD3700B29231 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99985861F02AD3700B29231 /* AppDelegate.swift */; };
+		E999858B1F02AD3700B29231 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E999858A1F02AD3700B29231 /* Assets.xcassets */; };
+		E999858E1F02AD3700B29231 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E999858C1F02AD3700B29231 /* Main.storyboard */; };
+		E99985991F02AF5E00B29231 /* ToolbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99985981F02AF5E00B29231 /* ToolbarVC.swift */; };
+		E999859B1F02AF7300B29231 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E999859A1F02AF7300B29231 /* ChannelVC.swift */; };
+		E999859D1F02AF8300B29231 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E999859C1F02AF8300B29231 /* ChatVC.swift */; };
+		E999859F1F02B04F00B29231 /* MainWC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E999859E1F02B04F00B29231 /* MainWC.swift */; };
+		E99985A21F02B0E100B29231 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99985A11F02B0E100B29231 /* Constants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E90B03B31F0304F700B29231 /* NSButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSButton.swift; sourceTree = "<group>"; };
+		E90B03B51F03104A00B29231 /* FocusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusView.swift; sourceTree = "<group>"; };
+		E99985831F02AD3700B29231 /* devslopesSlack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = devslopesSlack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E99985861F02AD3700B29231 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E999858A1F02AD3700B29231 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E999858D1F02AD3700B29231 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E999858F1F02AD3700B29231 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E99985981F02AF5E00B29231 /* ToolbarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolbarVC.swift; sourceTree = "<group>"; };
+		E999859A1F02AF7300B29231 /* ChannelVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
+		E999859C1F02AF8300B29231 /* ChatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		E999859E1F02B04F00B29231 /* MainWC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWC.swift; sourceTree = "<group>"; };
+		E99985A11F02B0E100B29231 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E99985801F02AD3700B29231 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E999857A1F02AD3600B29231 = {
+			isa = PBXGroup;
+			children = (
+				E99985851F02AD3700B29231 /* devslopesSlack */,
+				E99985841F02AD3700B29231 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E99985841F02AD3700B29231 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E99985831F02AD3700B29231 /* devslopesSlack.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E99985851F02AD3700B29231 /* devslopesSlack */ = {
+			isa = PBXGroup;
+			children = (
+				E99985A01F02B0D500B29231 /* Utils */,
+				E99985971F02AF2B00B29231 /* Model */,
+				E99985961F02AF2300B29231 /* View */,
+				E99985861F02AD3700B29231 /* AppDelegate.swift */,
+				E99985951F02AF1500B29231 /* Controller */,
+				E999858A1F02AD3700B29231 /* Assets.xcassets */,
+				E999858C1F02AD3700B29231 /* Main.storyboard */,
+				E999858F1F02AD3700B29231 /* Info.plist */,
+			);
+			path = devslopesSlack;
+			sourceTree = "<group>";
+		};
+		E99985951F02AF1500B29231 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E99985981F02AF5E00B29231 /* ToolbarVC.swift */,
+				E999859A1F02AF7300B29231 /* ChannelVC.swift */,
+				E999859C1F02AF8300B29231 /* ChatVC.swift */,
+				E999859E1F02B04F00B29231 /* MainWC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E99985961F02AF2300B29231 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E90B03B51F03104A00B29231 /* FocusView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E99985971F02AF2B00B29231 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E99985A01F02B0D500B29231 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E99985A11F02B0E100B29231 /* Constants.swift */,
+				E90B03B31F0304F700B29231 /* NSButton.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E99985821F02AD3700B29231 /* devslopesSlack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E99985921F02AD3700B29231 /* Build configuration list for PBXNativeTarget "devslopesSlack" */;
+			buildPhases = (
+				E999857F1F02AD3700B29231 /* Sources */,
+				E99985801F02AD3700B29231 /* Frameworks */,
+				E99985811F02AD3700B29231 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = devslopesSlack;
+			productName = devslopesSlack;
+			productReference = E99985831F02AD3700B29231 /* devslopesSlack.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E999857B1F02AD3700B29231 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Beau Galbraith";
+				TargetAttributes = {
+					E99985821F02AD3700B29231 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E999857E1F02AD3700B29231 /* Build configuration list for PBXProject "devslopesSlack" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E999857A1F02AD3600B29231;
+			productRefGroup = E99985841F02AD3700B29231 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E99985821F02AD3700B29231 /* devslopesSlack */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E99985811F02AD3700B29231 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E999858B1F02AD3700B29231 /* Assets.xcassets in Resources */,
+				E999858E1F02AD3700B29231 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E999857F1F02AD3700B29231 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E999859B1F02AF7300B29231 /* ChannelVC.swift in Sources */,
+				E999859F1F02B04F00B29231 /* MainWC.swift in Sources */,
+				E99985991F02AF5E00B29231 /* ToolbarVC.swift in Sources */,
+				E99985871F02AD3700B29231 /* AppDelegate.swift in Sources */,
+				E999859D1F02AF8300B29231 /* ChatVC.swift in Sources */,
+				E90B03B61F03104A00B29231 /* FocusView.swift in Sources */,
+				E99985A21F02B0E100B29231 /* Constants.swift in Sources */,
+				E90B03B41F0304F700B29231 /* NSButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E999858C1F02AD3700B29231 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E999858D1F02AD3700B29231 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E99985901F02AD3700B29231 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E99985911F02AD3700B29231 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		E99985931F02AD3700B29231 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = devslopesSlack/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.beaugalbraith.devslopesSlack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E99985941F02AD3700B29231 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = devslopesSlack/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.beaugalbraith.devslopesSlack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E999857E1F02AD3700B29231 /* Build configuration list for PBXProject "devslopesSlack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E99985901F02AD3700B29231 /* Debug */,
+				E99985911F02AD3700B29231 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E99985921F02AD3700B29231 /* Build configuration list for PBXNativeTarget "devslopesSlack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E99985931F02AD3700B29231 /* Debug */,
+				E99985941F02AD3700B29231 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E999857B1F02AD3700B29231 /* Project object */;
+}
