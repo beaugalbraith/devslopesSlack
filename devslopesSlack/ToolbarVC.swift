@@ -10,6 +10,7 @@ import Cocoa
 import CoreFoundation
 enum ModalType {
     case login
+    case createAccount
 }
 class ToolbarVC: NSViewController {
     //MARK: Outlets
@@ -54,18 +55,21 @@ class ToolbarVC: NSViewController {
         var modalWidth = CGFloat(0.0)
         var modalHeight = CGFloat(0.0)
         
-        print("present login modal")
-        modalBackground = FocusView()
-        modalBackground.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(modalBackground, positioned: .above, relativeTo: loginStackView)
-        let topConstraint = NSLayoutConstraint(item: modalBackground, attribute: .top, relatedBy: .equal, toItem: view, attribute: .top, multiplier: 1, constant: 50)
-        let trailConstraint = NSLayoutConstraint(item: modalBackground, attribute: .trailing, relatedBy: .equal, toItem: view, attribute: .trailing, multiplier: 1, constant: 0)
-        let leadConstraint = NSLayoutConstraint(item: modalBackground, attribute: .leading, relatedBy: .equal, toItem: view, attribute: .leading, multiplier: 1, constant: 0)
-        let bottomConstraint = NSLayoutConstraint(item: modalBackground, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .bottom, multiplier: 1, constant: 0)
-        view.addConstraints([topConstraint, bottomConstraint, leadConstraint, trailConstraint])
-        modalBackground.layer?.backgroundColor = CGColor.black
-        modalBackground.alphaValue = 0.0
-        
+        if modalBackground == nil {
+            modalBackground = FocusView()
+            modalBackground.translatesAutoresizingMaskIntoConstraints = false
+            view.addSubview(modalBackground, positioned: .above, relativeTo: loginStackView)
+            let topConstraint = NSLayoutConstraint(item: modalBackground, attribute: .top, relatedBy: .equal, toItem: view, attribute: .top, multiplier: 1, constant: 50)
+            let trailConstraint = NSLayoutConstraint(item: modalBackground, attribute: .trailing, relatedBy: .equal, toItem: view, attribute: .trailing, multiplier: 1, constant: 0)
+            let leadConstraint = NSLayoutConstraint(item: modalBackground, attribute: .leading, relatedBy: .equal, toItem: view, attribute: .leading, multiplier: 1, constant: 0)
+            let bottomConstraint = NSLayoutConstraint(item: modalBackground, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .bottom, multiplier: 1, constant: 0)
+            view.addConstraints([topConstraint, bottomConstraint, leadConstraint, trailConstraint])
+            modalBackground.layer?.backgroundColor = CGColor.black
+            modalBackground.alphaValue = 0.0
+            
+            let closeBackgroundClick = NSClickGestureRecognizer(target: self, action: #selector(ToolbarVC.closeModalClick(_:)))
+            modalBackground.addGestureRecognizer(closeBackgroundClick)
+        }
         //MARK: Instantiate Xib
         guard let modalType = notif.userInfo?[USER_INFO_MODAL] as? ModalType else { return }
         switch modalType {
@@ -73,7 +77,10 @@ class ToolbarVC: NSViewController {
             modalView = ModalLogin()
             modalWidth = 475
             modalHeight = 300
-            
+        case ModalType.createAccount:
+            modalView = ModalCreateAccount()
+            modalWidth = 475
+            modalHeight = 300
         }
         modalView.wantsLayer = true
         modalView.translatesAutoresizingMaskIntoConstraints = false
@@ -93,9 +100,7 @@ class ToolbarVC: NSViewController {
             modalView.animator().alphaValue = 1.0
             self.view.layoutSubtreeIfNeeded()
         }, completionHandler: nil)
-        
-        let closeBackgroundClick = NSClickGestureRecognizer(target: self, action: #selector(ToolbarVC.closeModalClick(_:)))
-        modalBackground.addGestureRecognizer(closeBackgroundClick)
+
         
 
     }

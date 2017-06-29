@@ -10,7 +10,6 @@
         <customObject id="-2" userLabel="File's Owner" customClass="ModalLogin" customModule="devslopesSlack" customModuleProvider="target">
             <connections>
                 <outlet property="createButton" destination="Ehn-iP-kxh" id="Wzo-mO-mIe"/>
-                <outlet property="createPushed" destination="Ehn-iP-kxh" id="ML5-HV-JBO"/>
                 <outlet property="emailText" destination="Uk2-Ma-z91" id="Fb0-a4-cEN"/>
                 <outlet property="exitButton" destination="npK-f0-ALR" id="OuO-u8-d6m"/>
                 <outlet property="loginButton" destination="50u-P1-v8Q" id="Pcx-hg-as1"/>
@@ -80,7 +79,7 @@
                                 <font key="font" metaFont="system"/>
                             </buttonCell>
                             <connections>
-                                <action selector="createPushed:" target="-2" id="DF4-IJ-E09"/>
+                                <action selector="createPushed:" target="-2" id="pEx-iI-JHs"/>
                             </connections>
                         </button>
                     </subviews>
