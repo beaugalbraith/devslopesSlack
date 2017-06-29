@@ -33,6 +33,7 @@ class ToolbarVC: NSViewController {
     //MARK: Helper Functions
     func setupView() {
         NotificationCenter.default.addObserver(self, selector: #selector(presentModal(_:)), name: NOTIF_PRESENT_MODAL, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(closeModalNotif(_:)), name: NOTIF_CLOSE_MODAL, object: nil)
         view.wantsLayer = true
         view.layer?.backgroundColor = chatGreen.cgColor
         
@@ -99,18 +100,33 @@ class ToolbarVC: NSViewController {
 
     }
     
-    func closeModalClick(_ gesture: NSClickGestureRecognizer) {
+    //MARK: Modal Functions
+    
+    func closeModalNotif(_ notif: Notification) {
+        if let removeImmediately = notif.userInfo?[USER_INFO_IMMEDIATELY_REMOVE] as? Bool {
+            closeModal(removeImmediately)
+        } else {
+            closeModal()
+        }
+    }
+    func closeModalClick(_ recognizer: NSClickGestureRecognizer) {
         closeModal()
     }
-    func closeModal() {
-        NSAnimationContext.runAnimationGroup({ (context) in
-            context.duration = 0.5
-            modalBackground.animator().alphaValue = 0.0
-            self.view.layoutSubtreeIfNeeded()
-        }) { 
-            if self.modalBackground != nil {
-            self.modalBackground.removeFromSuperview()
-            self.modalBackground = nil
+    func closeModal(_ removeImmediately: Bool = false) {
+        if removeImmediately {
+            self.modalView.removeFromSuperview()
+        } else {
+            NSAnimationContext.runAnimationGroup({ (context) in
+                context.duration = 0.5
+                modalBackground.animator().alphaValue = 0.0
+                modalView.animator().alphaValue = 0.0
+                self.view.layoutSubtreeIfNeeded()
+            }) {
+                if self.modalBackground != nil {
+                    self.modalBackground.removeFromSuperview()
+                    self.modalBackground = nil
+                }
+                self.modalView.removeFromSuperview()
             }
         }
     }
