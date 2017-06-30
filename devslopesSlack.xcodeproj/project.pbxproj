@@ -10,7 +10,9 @@
 		B63E89201F035A2D00CCDA29 /* ModalLogin.xib in Resources */ = {isa = PBXBuildFile; fileRef = B63E891F1F035A2D00CCDA29 /* ModalLogin.xib */; };
 		B63E89221F035A6600CCDA29 /* ModalLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63E89211F035A6600CCDA29 /* ModalLogin.swift */; };
 		B67AC8F81F04C04E00CCDA29 /* ModalCreateAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67AC8F71F04C04E00CCDA29 /* ModalCreateAccount.swift */; };
+		B6CEDDFB1F05C90F00CCDA29 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CEDDFA1F05C90F00CCDA29 /* AuthService.swift */; };
 		B6CFC5761F04B85D00CCDA29 /* ModalCreateAccount.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6CFC5751F04B85D00CCDA29 /* ModalCreateAccount.xib */; };
+		C58FB4C12EBC853788D9D010 /* Pods_devslopesSlack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 964884CEDF0085A71583A848 /* Pods_devslopesSlack.framework */; };
 		E90B03B41F0304F700B29231 /* NSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B03B31F0304F700B29231 /* NSButton.swift */; };
 		E90B03B61F03104A00B29231 /* FocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B03B51F03104A00B29231 /* FocusView.swift */; };
 		E99985871F02AD3700B29231 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99985861F02AD3700B29231 /* AppDelegate.swift */; };
@@ -24,9 +26,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2FD393605F1223747E08D49B /* Pods-devslopesSlack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-devslopesSlack.release.xcconfig"; path = "Pods/Target Support Files/Pods-devslopesSlack/Pods-devslopesSlack.release.xcconfig"; sourceTree = "<group>"; };
+		964884CEDF0085A71583A848 /* Pods_devslopesSlack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_devslopesSlack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B63E891F1F035A2D00CCDA29 /* ModalLogin.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModalLogin.xib; sourceTree = "<group>"; };
 		B63E89211F035A6600CCDA29 /* ModalLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalLogin.swift; sourceTree = "<group>"; };
 		B67AC8F71F04C04E00CCDA29 /* ModalCreateAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalCreateAccount.swift; sourceTree = "<group>"; };
+		B6CEDDFA1F05C90F00CCDA29 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		B6CFC5751F04B85D00CCDA29 /* ModalCreateAccount.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModalCreateAccount.xib; sourceTree = "<group>"; };
 		E90B03B31F0304F700B29231 /* NSButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSButton.swift; sourceTree = "<group>"; };
 		E90B03B51F03104A00B29231 /* FocusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusView.swift; sourceTree = "<group>"; };
@@ -40,6 +45,7 @@
 		E999859C1F02AF8300B29231 /* ChatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		E999859E1F02B04F00B29231 /* MainWC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWC.swift; sourceTree = "<group>"; };
 		E99985A11F02B0E100B29231 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F8EF04D40111444796092105 /* Pods-devslopesSlack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-devslopesSlack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-devslopesSlack/Pods-devslopesSlack.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,12 +53,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C58FB4C12EBC853788D9D010 /* Pods_devslopesSlack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C028FC157BDE60F8CEE33F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8EF04D40111444796092105 /* Pods-devslopesSlack.debug.xcconfig */,
+				2FD393605F1223747E08D49B /* Pods-devslopesSlack.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B63E891E1F035A1A00CCDA29 /* Xibs */ = {
 			isa = PBXGroup;
 			children = (
@@ -62,11 +78,21 @@
 			name = Xibs;
 			sourceTree = "<group>";
 		};
+		B6CEDDF91F05C8CD00CCDA29 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B6CEDDFA1F05C90F00CCDA29 /* AuthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		E999857A1F02AD3600B29231 = {
 			isa = PBXGroup;
 			children = (
 				E99985851F02AD3700B29231 /* devslopesSlack */,
 				E99985841F02AD3700B29231 /* Products */,
+				7C028FC157BDE60F8CEE33F5 /* Pods */,
+				F04106EB09B0FBCABCBC93B3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +107,7 @@
 		E99985851F02AD3700B29231 /* devslopesSlack */ = {
 			isa = PBXGroup;
 			children = (
+				B6CEDDF91F05C8CD00CCDA29 /* Services */,
 				B63E891E1F035A1A00CCDA29 /* Xibs */,
 				E99985A01F02B0D500B29231 /* Utils */,
 				E99985971F02AF2B00B29231 /* Model */,
@@ -131,6 +158,14 @@
 			name = Utils;
 			sourceTree = "<group>";
 		};
+		F04106EB09B0FBCABCBC93B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				964884CEDF0085A71583A848 /* Pods_devslopesSlack.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +173,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E99985921F02AD3700B29231 /* Build configuration list for PBXNativeTarget "devslopesSlack" */;
 			buildPhases = (
+				1474C2D4E3E85BD567C2215B /* [CP] Check Pods Manifest.lock */,
 				E999857F1F02AD3700B29231 /* Sources */,
 				E99985801F02AD3700B29231 /* Frameworks */,
 				E99985811F02AD3700B29231 /* Resources */,
+				BCA2CE47D1016767227987BD /* [CP] Embed Pods Frameworks */,
+				58289A7DAE5C8A572A23041D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,6 +237,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1474C2D4E3E85BD567C2215B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		58289A7DAE5C8A572A23041D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-devslopesSlack/Pods-devslopesSlack-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCA2CE47D1016767227987BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-devslopesSlack/Pods-devslopesSlack-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E999857F1F02AD3700B29231 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -209,6 +295,7 @@
 				B63E89221F035A6600CCDA29 /* ModalLogin.swift in Sources */,
 				E999859F1F02B04F00B29231 /* MainWC.swift in Sources */,
 				E99985991F02AF5E00B29231 /* ToolbarVC.swift in Sources */,
+				B6CEDDFB1F05C90F00CCDA29 /* AuthService.swift in Sources */,
 				E99985871F02AD3700B29231 /* AppDelegate.swift in Sources */,
 				E999859D1F02AF8300B29231 /* ChatVC.swift in Sources */,
 				E90B03B61F03104A00B29231 /* FocusView.swift in Sources */,
@@ -325,6 +412,7 @@
 		};
 		E99985931F02AD3700B29231 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8EF04D40111444796092105 /* Pods-devslopesSlack.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -338,6 +426,7 @@
 		};
 		E99985941F02AD3700B29231 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FD393605F1223747E08D49B /* Pods-devslopesSlack.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
